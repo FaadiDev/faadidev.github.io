@@ -1,0 +1,121 @@
+/* Font CDN */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000c1b;
+    color: white;
+}
+
+section {
+    height: 90vh;
+}
+
+/* Utility Classes */
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sub-logo {
+    color: #ffa31a;
+}
+
+.checkout-card {
+    background-color: #fff;
+    color: black;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.form-col {
+    margin-bottom: 10px;
+}
+
+.form-col input{
+    padding: 5px;
+    border: 1px solid #ffa31a;
+    border-radius: 5px;
+    width: 100%;
+    outline: none;
+}
+
+.payment-method {
+    margin-top: 20px;
+}
+
+.payment-method input[type="radio"] {
+    accent-color: #ffa31a;
+    border-color: #ffa31a;
+}
+
+.form-button {
+    margin-top: 20px;
+}
+
+.form-button a button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #ffa31a;
+    border-radius: 50px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.form-button a button:hover {
+    background-color: #ffa31a;
+    color: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+    .checkout-card {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .msg {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .form-button a button {
+        padding: 5px 10px;
+        font-size: 14px;
+    }
+
+    .form-col label {
+        font-size: 14px;
+    }
+
+    .payment-method .form-row label {
+        font-size: 14px;
+    }
+}

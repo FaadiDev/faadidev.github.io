@@ -1,0 +1,280 @@
+/* Font CDN */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000c1b;
+    color: white;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+/* Utility Classes */
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.section {
+    padding: 40px;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 28px;
+}
+
+section hr {
+    margin-inline: auto;
+    margin-block: 10px;
+    height: 3px;
+    border: none;
+    background-color: #ffa31a;
+    width: 20%;
+}
+/* Navbar */
+.navbar {
+    padding: 20px 40px;
+    background-color: #000c1b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-item {
+    margin-inline: 10px;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::before {
+    content: '';
+    background-color: #ffa31a;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s ease-in-out;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sub-logo,
+.fa-cart-shopping {
+    color: #ffa31a;
+}
+
+.hamburger {
+    display: none;
+    color: white;
+}
+
+/* FAQ */
+
+.bg-faq {
+    background-image: url(image/bg/bg-faq.webp);
+    background-size: cover;
+    background-position: center;
+    padding: 40px;
+    padding-top: 80px;
+}
+
+.question {
+    margin-bottom: 5px;
+}
+
+.answer {
+    margin-bottom: 10px;
+}
+
+.dark-bg {
+    background-color: rgba(0, 0, 0, .6);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+/* Footer */
+.footer {
+    box-shadow: 0 0px 4px rgb(255, 163, 26);
+}
+
+.footer ul li {
+    padding-block: 5px;
+}
+
+.footer ul li::before {
+    content: "\2022"; 
+    color: #ffa31a;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.contact i {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+.social-icons {
+    margin-block: 20px;
+}
+
+.social-icons p {
+    margin-bottom: 10px;
+}
+
+.footer .fa-brands {
+    font-size: 22px;
+    transition: .2s ease-in-out;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: #4267B2;
+}
+.fa-instagram:hover {
+    color: 	#C13584;
+}
+.fa-tiktok:hover {
+    color: #ff0050;
+}
+.fa-whatsapp:hover {
+    color: #25D366;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.reach{
+    margin-bottom: 20px;
+}
+
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    .cart {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar .nav-menu {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        padding: 20px;
+        background-color: #000c1b;
+        transition: 0.5s;
+        box-shadow: 0 -2px 2px #ffa31a;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .question {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .answer {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .hero-heading {
+        font-size: 5vw;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .footer .d-flex {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer .nav-menu,
+    .footer .logo {
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .question {
+        font-size: 16px;
+    }
+    .answer {
+        font-size: 14px;
+    }
+}

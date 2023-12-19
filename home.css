@@ -1,0 +1,398 @@
+/* Font CDN */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000c1b;
+    color: white;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+/* Utility Classes */
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.justify-space-between {
+    justify-content: space-between;
+}
+
+.section {
+    padding: 40px;
+}
+
+.section-heading {
+    text-align: center;
+    font-size: 28px;
+}
+
+section hr {
+    margin-inline: auto;
+    margin-block: 10px;
+    height: 3px;
+    border: none;
+    background-color: #ffa31a;
+    width: 20%;
+}
+/* Navbar */
+.navbar {
+    padding: 20px 40px;
+    background-color: #000c1b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: all 300ms ease-in-out;
+}
+
+.nav-item {
+    margin-inline: 10px;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::before {
+    content: '';
+    background-color: #ffa31a;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .3s ease-in-out;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sub-logo,
+.fa-cart-shopping {
+    color: #ffa31a;
+}
+
+.hamburger {
+    display: none;
+    color: white;
+}
+
+/* Hero */
+.bg-img {
+    background-image: url(image/bg/bg-hero.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hero-content {
+    width: 60%;
+    text-align: center;
+}
+
+.hero-heading {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: 2px solid #ffa31a;
+    border-radius: 50px;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ffa31a;
+}
+
+/* Best Selling */
+.bs-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.bs-card {
+    background-color: #001124;
+    border-radius: 10px;
+    transition: .3s ease-in-out;
+}
+
+.bs-card:hover {
+    transform: scale(1.1);
+    background-color: #00142b;
+}
+
+/* .bs-card-img {
+    width: 100%;
+    height: 100%;
+} */
+
+.bs-card-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.bs-card-body {
+    padding: 15px;
+}
+
+.bs-card-heading {
+    font-size: 18px;
+}
+
+.bs-card-description {
+    font-size: 16px;
+}
+
+.bs-card-price {
+    font-size: 14px;
+}
+
+.rating i {
+    color: #ffa31a;
+}
+
+.rating span {
+    opacity: .5;
+}
+
+.btn-buy {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Out Partner */
+.bg-parallax {
+    background-image: url(image/bg/bg-parallax.jpg);
+    /* height: 50vh; */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.partner-card {
+    padding: 10px;
+    background-color: #ffa31a;
+    margin-right: 20px;
+    border-radius: 10px;
+    filter: grayscale(1);
+    transition: .2s ease-in-out;
+    margin-top: 20px;
+}
+
+.partner-card:hover {
+    filter: grayscale(0);
+}
+
+.partner-card:hover img{
+    transform: scale(1.15);
+}
+.partner-image {
+    height: 120px;
+    width: 120px;
+    position: relative;
+}
+
+.partner-card img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transition: .2s ease-in-out;
+}
+
+/* Footer */
+.footer {
+    box-shadow: 0 0px 4px rgb(255, 163, 26);
+}
+
+.footer ul li {
+    padding-block: 5px;
+}
+
+.footer ul li::before {
+    content: "\2022"; 
+    color: #ffa31a;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.contact i {
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+
+.social-icons {
+    margin-block: 20px;
+}
+
+.social-icons p {
+    margin-bottom: 10px;
+}
+
+.footer .fa-brands {
+    font-size: 22px;
+    transition: .2s ease-in-out;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.fa-facebook:hover {
+    color: #4267B2;
+}
+.fa-instagram:hover {
+    color: 	#C13584;
+}
+.fa-tiktok:hover {
+    color: #ff0050;
+}
+.fa-whatsapp:hover {
+    color: #25D366;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.reach{
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 600px) {
+    .cart {
+        display: none;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .navbar .nav-menu {
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        width: 100%;
+        padding: 20px;
+        background-color: #000c1b;
+        transition: 0.5s;
+        box-shadow: 0 -2px 2px #ffa31a;
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .bs-grid {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
+
+    .hero-heading {
+        font-size: 5vw;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .bs-card-heading {
+        font-size: 16px;
+    }
+
+    .bs-card-description {
+        font-size: 14px;
+    }
+
+    .bs-card-price {
+        font-size: 12px;
+    }
+
+    .footer .d-flex {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer .nav-menu,
+    .footer .logo {
+        margin-bottom: 10px;
+    }
+
+    .footer {
+        font-size: 14px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 992px) {
+    .bs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .partner-cards {
+        flex-wrap: wrap;
+    }
+}

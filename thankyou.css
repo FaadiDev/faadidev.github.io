@@ -1,0 +1,109 @@
+/* Font CDN */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000c1b;
+    color: white;
+}
+
+section {
+    height: 90vh;
+}
+
+/* Utility Classes */
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    text-align: center;
+}
+
+.sub-logo {
+    color: #ffa31a;
+}
+
+.icon {
+    margin-block: 20px;
+}
+
+.fa-face-smile {
+    color: #ffa31a;
+    font-size: 80px;
+}
+
+.fa-circle-check {
+    color: green;
+    font-size: 80px;
+}
+
+.thankyou-card {
+    background-color: #fff;
+    color: black;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 2px solid #ffa31a;
+    border-radius: 50px;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #ffa31a;
+    color: #fff;
+}
+
+.button {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 450px) {
+    .thankyou-card {
+        width: 90%;
+    }
+    .btn {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .fa-face-smile,
+    .fa-circle-check {
+        font-size: 60px;
+    }
+
+    .msg {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+}

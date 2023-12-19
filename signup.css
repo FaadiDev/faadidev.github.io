@@ -1,0 +1,150 @@
+/* Font CDN */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+/* General Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    background-color: #000c1b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Utility Classes */
+.d-flex {
+    display: flex;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.logo {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.sub-logo {
+    color: #ffa31a;
+}
+
+.signup-form {
+    background-color: #fff;
+    color: black;
+    padding: 40px;
+    border-radius: 10px;
+    width: 400px;
+}
+
+.msg {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-col {
+    margin-bottom: 10px;
+}
+
+.form-col input {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #ffa31a;
+}
+
+.form-col input:focus {
+    outline: none;
+}
+
+.form-button,
+.checkbox {
+    margin-top: 20px;
+}
+
+.checkbox input[type='checkbox'] {
+    accent-color: #ffa31a;
+    padding:20px;
+}
+
+.form-button button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ffa31a;
+    border: 2px solid #ffa31a;
+    color: #fff;
+    font-weight: bold;
+    margin-inline: 10px;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+}
+
+.form-button button:hover {
+    background-color: transparent;
+    color: black;
+}
+
+.form-col.checkbox input {
+    width: 15px;
+    margin-right: 5px;
+}
+
+.password {
+    font-size: 14px;
+    opacity: .9;
+    color: black;
+    text-decoration: none;
+}
+
+.password:hover {
+    color: #ffa31a;
+    opacity: .9;
+}
+
+/* Responsive */
+@media only screen and (max-width: 420px) {
+    .signup-form {
+        width: 90%;
+        padding: 20px;
+    }
+    .logo {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .msg {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    .form-col input {
+    font-size: 12px;
+    }
+
+    .form-col label {
+        font-size: 14px;
+    }
+
+    .form-button button {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .form-col.checkbox label{
+        font-size: 12px;
+    }
+}
